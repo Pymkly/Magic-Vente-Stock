@@ -8,3 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'magic-vente-stock';
 }
+export const appName = 'Magic VenteStock';
