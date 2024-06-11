@@ -1,12 +1,12 @@
 .all-product{
-    margin: 50px;
-    text-align: center;
+  margin: 50px;
+  text-align: center;
 }
 
 .all-product > h1{
     font-size: 42px;
     color: #837346;
-    margin-bottom: 65px;
+    margin-bottom: 0px;
 }
 
 .pagination {
@@ -38,3 +38,43 @@
   .page-button.active {
     background-color: #a9a9a9;
   }
+    .container {
+      text-align: center;
+      color: black;
+     padding-bottom:65px;
+      margin-top: 0px;
+    }
+  
+    .header {
+      background-color: white;
+      color: #837346;
+      padding: 20px;
+      font-size: 2em;
+      margin-bottom: 65px;
+      font-weight: bold;
+    }
+  
+    .search {
+      margin-top: 20px;
+    }
+  
+    input {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 0px;
+      border: 1px solid #ccc;
+    }
+  
+    button {
+      padding: 10px 20px;
+      border-radius: 0px;
+      border: none;
+      background-color: #837346;
+      color: white;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: black;
+      color: white;
+    }

@@ -10,7 +10,6 @@ import { BodyComponent } from './home/body/body.component';
 import { AllProductComponent } from './product/all-product/all-product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { ProductdayComponent } from './home/productday/productday.component';
-import { RechercheComponent } from './home/recherche/recherche.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { RechercheComponent } from './home/recherche/recherche.component';
     AllProductComponent,
     ProductItemComponent,
     ProductdayComponent,
-    RechercheComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

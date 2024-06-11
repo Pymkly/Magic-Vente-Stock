@@ -1,21 +1,48 @@
 <div class="all-product">
   <h1>Nos produits</h1>
+  <div class="container">
+    <h2>Laissez nous vous aider à chercher</h2>
+    <div class="search">
+      <input type="text" placeholder="Mot clé" />
+      <br />
+      <input type="text" placeholder="Mot clé" />
+      <br />
+      <input type="text" placeholder="Mot clé" />
+      <br />
+      <button>Rechercher</button>
+    </div>
+  </div>
+
   <div *ngFor="let product of displayedProducts">
     <app-product-item
       [imageSrc]="product.imageSrc"
       [name]="product.name"
       [price]="product.price"
-      [isReverse]="(currentPage + displayedProducts.indexOf(product)) % 2 !== 0">
+      [isReverse]="(currentPage + displayedProducts.indexOf(product)) % 2 !== 0"
+    >
     </app-product-item>
   </div>
   <div class="pagination">
-    <button class="page-button" (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">
+    <button
+      class="page-button"
+      (click)="onPageChange(currentPage - 1)"
+      [disabled]="currentPage === 1"
+    >
       <<
     </button>
-    <button class="page-button" *ngFor="let page of totalPages" (click)="onPageChange(page)" [class.active]="currentPage === page">
+    <button
+      class="page-button"
+      *ngFor="let page of totalPages"
+      (click)="onPageChange(page)"
+      [class.active]="currentPage === page"
+    >
       {{ page }}
     </button>
-    <button class="page-button" (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === totalPages.length">
+    <button
+      class="page-button"
+      (click)="onPageChange(currentPage + 1)"
+      [disabled]="currentPage === totalPages.length"
+    >
       >>
     </button>
   </div>
