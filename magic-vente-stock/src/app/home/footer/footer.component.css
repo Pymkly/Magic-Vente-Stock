@@ -1,33 +1,8 @@
-/* Fixer le footer en bas */
-.container {
-  margin: 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.foot-container{
+  margin: 0 auto;
+}
+.texte{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Couleur d'arrière-plan semi-transparente pour lisibilité */
-}
-
-.image-fond {
-  width: 100%;
-  position: relative;
-  overflow: hidden; /* Pour couper l'image en oblique */
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Assure que l'image couvre tout l'espace disponible sans déformer son rapport hauteur/largeur */
-  transform: skewY(-6.5deg); /* Coupe l'image en oblique */
-}
-
-.texte {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Couleur du texte */
-  text-align: center; /* Centrer le texte */
+  flex-flow: column nowrap;
+  align-content: center;
 }
