@@ -1,0 +1,11 @@
+<div class="all-product">
+<h1>Nos produits</h1>
+<div *ngFor="let product of products; let i = index">
+    <app-product-item
+      [imageSrc]="product.imageSrc"
+      [name]="product.name"
+      [price]="product.price"
+      [isReverse]="i % 2 !== 0">
+    </app-product-item>
+  </div>
+</div>

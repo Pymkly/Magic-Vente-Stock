@@ -1,0 +1,10 @@
+.all-product{
+    margin: 250px;
+    text-align: center;
+}
+
+.all-product > h1{
+    font-size: 42px;
+    color: #837346;
+    margin-bottom: 65px;
+}
