@@ -2,15 +2,21 @@
   <h1>Nos produits</h1>
   <div class="container">
     <h2>Laissez nous vous aider à chercher</h2>
-    <div class="search">
-      <input type="text" placeholder="Mot clé" />
-      <br />
-      <input type="text" placeholder="Mot clé" />
-      <br />
-      <input type="text" placeholder="Mot clé" />
-      <br />
-      <button>Rechercher</button>
-    </div>
+    <form>
+      <div>
+        <label for="keyword">Mot clé</label>
+        <input type="text" id="keyword" name="keyword" />
+      </div>
+      <div>
+        <label for="min-price">Prix minimum</label>
+        <input type="number" id="min-price" name="min-price" />
+      </div>
+      <div>
+        <label for="max-price">Prix maximum</label>
+        <input type="number" id="max-price" name="max-price" />
+      </div>
+      <button type="submit">Rechercher</button>
+    </form>
   </div>
 
   <div *ngFor="let product of displayedProducts">

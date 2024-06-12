@@ -42,7 +42,7 @@
       text-align: center;
       color: black;
      padding-bottom:65px;
-      margin-top: 0px;
+      margin-top: 20px;
     }
   
     .header {
@@ -57,24 +57,36 @@
     .search {
       margin-top: 20px;
     }
-  
-    input {
-      margin: 10px;
-      padding: 10px;
-      border-radius: 0px;
-      border: 1px solid #ccc;
-    }
-  
-    button {
-      padding: 10px 20px;
-      border-radius: 0px;
-      border: none;
-      background-color: #837346;
-      color: white;
-      cursor: pointer;
-    }
-  
-    button:hover {
-      background-color: black;
-      color: white;
-    }
+
+        form {
+          width: 300px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+    
+        form div {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+        }
+    
+        form input,
+        form button {
+          border: 1px solid black;
+          width: 100%;
+          height: 30px;
+          font-family:Cormorant Garamond;
+          font-size: medium;
+        }
+    
+        form button {
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          margin-top: 20px;
+          height: 30px;
+        }
+       form button:hover {
+        background-color: black;
+        color: white;
+       }
