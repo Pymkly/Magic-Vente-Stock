@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
 import { HomeComponent } from './home/home.component';
-import {FooterComponent} from "./home/footer/footer.component";
+import { FooterComponent } from './home/footer/footer.component';
 import { BodyComponent } from './home/body/body.component';
 import { AllProductComponent } from './product/all-product/all-product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
+import { ProductdayComponent } from './home/productday/productday.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,10 @@ import { ProductItemComponent } from './product/product-item/product-item.compon
     BodyComponent,
     AllProductComponent,
     ProductItemComponent,
+    ProductdayComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
