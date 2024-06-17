@@ -1,0 +1,86 @@
+.login-container {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-container {
+  width: 350px;
+  padding: 50px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.login-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.login-form-container {
+  padding: 50px;
+  background-color: #837346;
+  min-width: 350px;
+}
+
+.login-zone {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.login-zone-title {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.login-form-control {
+  width: 95%;
+  height: 20px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.login-input-zone {
+  margin-top: 40px;
+  padding-right: 5px;
+}
+
+.login-input {
+  margin-top: 10px;
+}
+
+.login-input label {
+  font-size: 15px;
+}
+
+.identify-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.identify-button.identify {
+  color: white;
+  background-color: #837346;
+  margin-bottom: 5px;
+}
+
+.identify-button.create {
+  margin-bottom: 30px;
+}
+
+.login-input .identify-button {
+  padding-bottom: 50px;
+}

@@ -9,7 +9,16 @@
       <ul class="header-menu">
         <li class="header-menu-details">Accueil</li>
         <li>
-          <button class="btn  header-connect-button">S'identifier</button>
+          <div *ngIf="checkLogin()" class="user-info" >
+            <div class="user-info-img">
+              <img src="assets/image/user2.jpg" alt="User"/>
+            </div>
+            <p>{{getUserName()}}</p>
+            <div class="user-info-deconnect" (click)="signOut()">
+              <img src="assets/image/deconnect1.png" alt="User"/>
+            </div>
+          </div>
+          <button *ngIf="!checkLogin()" class="btn  header-connect-button" (click)="login()" >S'identifier</button>
         </li>
       </ul>
     </div>

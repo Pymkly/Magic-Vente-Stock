@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import {LoginService} from "../../login.service";
 
 @Component({
   selector: 'app-product-item',
@@ -10,4 +11,12 @@ export class ProductItemComponent {
   @Input() name: string | undefined;
   @Input() price: string | undefined;
   @Input() isReverse: boolean = false;
+
+  constructor(private loginService: LoginService) {
+
+  }
+
+  isConnected() {
+    return this.loginService.checkAuth();
+  }
 }

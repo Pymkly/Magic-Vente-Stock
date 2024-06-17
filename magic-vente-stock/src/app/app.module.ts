@@ -10,6 +10,8 @@ import { BodyComponent } from './home/body/body.component';
 import { AllProductComponent } from './product/all-product/all-product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { ProductdayComponent } from './home/productday/productday.component';
+import { LoginComponent } from './login/login.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { ProductdayComponent } from './home/productday/productday.component';
     AllProductComponent,
     ProductItemComponent,
     ProductdayComponent,
+    LoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+    imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

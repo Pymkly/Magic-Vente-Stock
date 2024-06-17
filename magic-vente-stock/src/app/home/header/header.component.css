@@ -34,6 +34,37 @@
   color: white;
 }
 
+.user-info {
+ display: flex;
+  justify-content: space-between;
+  width: 175px;
+  color: white;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 5px 25px;
+  margin-top: -5px;
+  border-radius: 10px;
+}
+
+.user-info p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.user-info img {
+  width: 100%;
+}
+
+.user-info-img {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-info-deconnect {
+  width: 40px;
+  cursor: pointer;
+}
+
 .header-connect-button {
   min-width: 200px;
   font-size: 20px;
@@ -43,6 +74,7 @@
   color: white;
   font-weight: bold;
   border: 0;
+  cursor: pointer;
 }
 
 .header-image {

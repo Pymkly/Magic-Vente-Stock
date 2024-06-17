@@ -6,14 +6,14 @@
 .all-product > h1{
     font-size: 42px;
     color: #837346;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .pagination {
     margin-top: 100px;
     text-align: center;
   }
-  
+
   .page-button {
     padding: 5px 10px;
     margin: 0 5px;
@@ -25,7 +25,7 @@
     border: none;
     font-size: 20px;
   }
-  
+
   .page-button:hover {
     background-color: #d0d0d0;
   }
@@ -44,7 +44,7 @@
      padding-bottom:65px;
       margin-top: 30px;
     }
-  
+
     .header {
       background-color: white;
       color: #837346;
@@ -53,18 +53,18 @@
       margin-bottom: 65px;
       font-weight: bold;
     }
-  
+
     .search {
       margin-top: 20px;
     }
-  
+
     input {
       margin: 10px;
       padding: 10px;
       border-radius: 0px;
       border: 1px solid #ccc;
     }
-  
+
     button {
       padding: 10px 20px;
       border-radius: 0px;
@@ -73,7 +73,7 @@
       color: white;
       cursor: pointer;
     }
-  
+
     button:hover {
       background-color: black;
       color: white;

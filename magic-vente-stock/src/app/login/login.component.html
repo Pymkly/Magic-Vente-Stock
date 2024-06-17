@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div class="image-container">
+    <img src="assets/image/login.png" alt="Login Gondor Chic">
+  </div>
+  <div class="login-form-container">
+    <h1 class="login-title">Mae govannen</h1>
+    <div class="login-zone">
+      <h3 class="login-zone-title">Identifiez-vous</h3>
+      <div class="login-input-zone">
+        <div class="login-input">
+          <label>Nom d'utilisateur</label>
+          <input [(ngModel)]="name" name="name" type="text" class="login-form-control" />
+        </div>
+        <div class="login-input">
+          <label>Mot de passe</label>
+          <input [(ngModel)]="password"  name="password" type="password" class="login-form-control" />
+        </div>
+        <div class="login-button">
+          <button class="identify-button identify" (click)="login()">S'identifier</button>
+          <button class="identify-button create"> Créer un compte</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
