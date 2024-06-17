@@ -1,5 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/assets/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/assets/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: 'Cormorant', serif;
+}
+
+/* Ajouter d'autres déclarations @font-face si nécessaire */
 
 * {
   padding: 0;

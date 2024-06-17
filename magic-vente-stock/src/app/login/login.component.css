@@ -48,6 +48,18 @@
   padding: 5px;
 }
 
+.back-link {
+  background-color: #A16036;
+  border: none;
+  color: white;
+  margin: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  padding: 5px 30px;
+  cursor: pointer;
+}
+
 .login-input-zone {
   margin-top: 40px;
   padding-right: 5px;
@@ -61,6 +73,10 @@
   font-size: 15px;
 }
 
+.change-color {
+  color: #837346;
+}
+
 .identify-button {
   margin-top: 20px;
   width: 100%;
@@ -69,6 +85,7 @@
   font-size: 15px;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .identify-button.identify {

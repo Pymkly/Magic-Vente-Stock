@@ -14,15 +14,19 @@ export class LoginComponent {
   constructor(private loginService: LoginService, private router: Router) {
   }
 
+  back() {
+    this.router.navigate(['/']).then(r => {
+
+    })
+  }
+
   login() {
     let param = {
       pseudo : this.name,
       motDePasse: this.password
     }
     this.loginService.auth(param, (data) => {
-      this.router.navigate(['/']).then(r => {
-
-      })
+      this.back();
     })
   }
 }
