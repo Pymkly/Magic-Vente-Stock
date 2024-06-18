@@ -15,7 +15,7 @@
 
   <div *ngFor="let product of displayedProducts">
     <app-product-item
-      [imageSrc]="product.libelle"
+      [imageSrc]="product.reference"
       [name]="product.libelle"
       [price]="product.prix"
       [isReverse]="(currentPage + displayedProducts.indexOf(product)) % 2 !== 0"

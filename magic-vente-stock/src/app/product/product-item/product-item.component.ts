@@ -20,7 +20,7 @@ export class ProductItemComponent {
     if (input) {
       return input
         .toLowerCase()
-        .replace(/[^a-z]/g, '-');
+        .replace(/[^a-z0-9]/g, '-');
     }
     return ""
   }
