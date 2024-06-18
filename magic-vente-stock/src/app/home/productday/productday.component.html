@@ -1,17 +1,25 @@
 <div *ngIf="product" class="product-container">
   <h1>Le produit du jour</h1>
-  <div class="product-display">
-    <div class="product-image-container">
-      <img
-        [src]="product.imageUrl"
-        alt="Image du produit"
-        class="product-image"
-      />
-    </div>
-    <div class="product-info">
-      <h2>{{ product.name }}</h2>
-      <p>{{ product.description }}</p>
-      <p>Prix: {{ product.price }} Gondariar</p>
-    </div>
-  </div>
+
+  <app-product-item
+    [imageSrc]="product.libelle"
+    [name]="product.libelle"
+    [price]="product.prix.toString()"
+    [isReverse]="false"
+  >
+  </app-product-item>
+<!--  <div class="product-display">-->
+<!--    <div class="product-image-container">-->
+<!--      <img-->
+<!--        [src]="product.imageUrl"-->
+<!--        alt="Image du produit"-->
+<!--        class="product-image"-->
+<!--      />-->
+<!--    </div>-->
+<!--    <div class="product-info">-->
+<!--      <h2>{{ product.name }}</h2>-->
+<!--      <p>{{ product.description }}</p>-->
+<!--      <p>Prix: {{ product.price }} Gondariar</p>-->
+<!--    </div>-->
+<!--  </div>-->
 </div>

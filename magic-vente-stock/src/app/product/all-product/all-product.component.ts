@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoginService} from "../../login.service";
 
 @Component({
   selector: 'app-all-product',
@@ -6,19 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./all-product.component.css']
 })
 export class AllProductComponent {
-  allProducts  = [
-    { imageSrc: 'assets/image/Orcrist-epee-de-Thorin-Le-Seigneur-des-Anneaux-forge-Gondolin-dent-de-dragon.jpg', name: 'Orcrist epée de Thorin', price: '10 Gondariar'},
-    { imageSrc: 'assets/image/10000003882905-0-700x700.jpg', name: 'Herugrim', price: '14 Gondariar'},
-    { imageSrc: 'assets/image/epee-arwen-seigneur-des-anneaux.jpg', name: 'Epée Arwen', price: '7 Gondariar'},
-    { imageSrc: 'assets/image/epee-arwen-seigneur-des-anneaux.jpg', name: 'Epée Arwen', price: '7 Gondariar'},
-  ];
+  allProducts  = [];
+
+  // { imageSrc: 'assets/image/Orcrist-epee-de-Thorin-Le-Seigneur-des-Anneaux-forge-Gondolin-dent-de-dragon.jpg', name: 'Orcrist epée de Thorin', price: '10 Gondariar'},
+  // { imageSrc: 'assets/image/10000003882905-0-700x700.jpg', name: 'Herugrim', price: '14 Gondariar'},
+  // { imageSrc: 'assets/image/epee-arwen-seigneur-des-anneaux.jpg', name: 'Epée Arwen', price: '7 Gondariar'},
+  // { imageSrc: 'assets/image/epee-arwen-seigneur-des-anneaux.jpg', name: 'Epée Arwen', price: '7 Gondariar'},
 
   displayedProducts: any[] = [];
   currentPage: number = 1;
   itemsPerPage: number = 3;
 
-  constructor() {
+  constructor(private loginService: LoginService) {
     this.updateDisplayedProducts();
+  }
+
+  ngOnInit() {
+    this.loginService.getProducts((products) => {
+      this.allProducts = products;
+      this.updateDisplayedProducts()
+      console.log(products)
+    })
   }
 
   updateDisplayedProducts() {

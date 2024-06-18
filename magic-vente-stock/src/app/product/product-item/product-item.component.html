@@ -1,10 +1,10 @@
 <div class="product-item" [ngClass]="{'reverse': isReverse}">
     <div class="product-image">
-      <img [src]="imageSrc" alt="Product Image">
+      <img [src]="this.toUrl()" alt="">
     </div>
     <div class="product-info">
       <h2>{{ name }}</h2>
-      <p>{{ price }}</p>
+      <p>{{ price }} Gondariar</p>
       <button *ngIf="isConnected()" class="btn product-add-button">Ajouter au panier</button>
     </div>
 </div>

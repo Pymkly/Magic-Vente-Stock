@@ -16,6 +16,19 @@ export class ProductItemComponent {
 
   }
 
+  normalizeString(input: string| undefined) {
+    if (input) {
+      return input
+        .toLowerCase()
+        .replace(/[^a-z]/g, '-');
+    }
+    return ""
+  }
+
+  toUrl() {
+    return `assets/image/${this.normalizeString(this.imageSrc)}.jpg`
+  }
+
   isConnected() {
     return this.loginService.checkAuth();
   }

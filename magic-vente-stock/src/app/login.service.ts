@@ -27,6 +27,20 @@ export class LoginService {
     // next(data)
   }
 
+  getProducts(next: (data:any) => void = () => {}, error: (err:any) => void = () => {}) {
+    let productsUrl = `${url}/api/produits`
+    this.http.get(productsUrl).subscribe((data) => {
+      next(data)
+    }, error)
+  }
+
+  getProductOfTheDay(next: (data:any) => void = () => {}, error: (err:any) => void = () => {}) {
+    let productsUrl = `${url}/api/produits/produit-du-jour`
+    this.http.get(productsUrl).subscribe((data) => {
+      next(data)
+    }, error)
+  }
+
   checkAuth() {
     return sessionStorage.getItem(this.tokenKey)
   }
