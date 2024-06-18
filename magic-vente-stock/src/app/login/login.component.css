@@ -101,3 +101,8 @@
 .login-input .identify-button {
   padding-bottom: 50px;
 }
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

@@ -16,6 +16,8 @@ export class LoginService {
     this.http.post(loginUrl, param).subscribe((data:any) => {
       sessionStorage.setItem(this.tokenKey, JSON.stringify(data));
       next(data)
+    }, err => {
+      error(err)
     })
     // let data = {
     //   pseudo: 'Galadriel'

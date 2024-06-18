@@ -17,6 +17,7 @@
             <label>Mot de passe</label>
             <input [(ngModel)]="password"  name="password" type="password" class="login-form-control" />
           </div>
+          <p class="error-message" *ngIf="error">Echèc de connexion</p>
           <div class="login-button">
             <button class="identify-button identify" (click)="login()">S'identifier</button>
             <button class="identify-button create"> Créer un compte</button>

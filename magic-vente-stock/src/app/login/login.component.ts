@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
 export class LoginComponent {
   name: string = 'aragorn';
   password: string = 'strider123';
+  error: boolean = false;
 
   constructor(private loginService: LoginService, private router: Router) {
   }
@@ -25,8 +26,11 @@ export class LoginComponent {
       pseudo : this.name,
       motDePasse: this.password
     }
+    this.error = false;
     this.loginService.auth(param, (data) => {
       this.back();
+    }, err => {
+      this.error = true;
     })
   }
 }
