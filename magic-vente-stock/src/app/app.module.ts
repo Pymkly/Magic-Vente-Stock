@@ -12,6 +12,7 @@ import { ProductItemComponent } from './product/product-item/product-item.compon
 import { ProductdayComponent } from './home/productday/productday.component';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import {FormsModule} from "@angular/forms";
     ProductdayComponent,
     LoginComponent,
   ],
-    imports: [BrowserModule, AppRoutingModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
